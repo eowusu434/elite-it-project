@@ -1,0 +1,1359 @@
+/* =========================================================
+   ELITE IT CONSULTING
+   MAIN STYLESHEET
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f7fb;
+
+    color: #172033;
+
+    line-height: 1.6;
+}
+
+
+img {
+    max-width: 100%;
+
+    display: block;
+}
+
+
+a {
+    color: inherit;
+}
+
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    background:
+        linear-gradient(
+            120deg,
+            #062d5b,
+            #073d73 50%,
+            #062c56
+        );
+
+    color: white;
+
+    margin: 16px;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.header-container {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding:
+        28px
+        40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    min-width: 390px;
+}
+
+
+.brand-icon {
+    width: 58px;
+
+    height: 58px;
+
+    border:
+        2px solid
+        #51a9ff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #51a9ff;
+
+    font-size: 25px;
+}
+
+
+.brand h1 {
+    margin: 0;
+
+    font-size: 30px;
+
+    letter-spacing: 1px;
+}
+
+
+.brand p {
+    margin: 0;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    opacity: 0.9;
+}
+
+
+.header-divider {
+    width: 2px;
+
+    height: 65px;
+
+    background:
+        rgba(255, 255, 255, 0.6);
+}
+
+
+.header-tagline {
+    display: flex;
+
+    flex-direction: column;
+
+    font-size: 16px;
+}
+
+
+.header-tagline strong {
+    font-size: 18px;
+}
+
+
+.header-tagline span {
+    margin-top: 2px;
+
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.main-navigation {
+    background: white;
+
+    border-bottom:
+        1px solid
+        #dce3ed;
+}
+
+
+.navigation-container {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 13px 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.navigation-container a {
+    color: #06386d;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.navigation-container a:hover {
+    color: #1683df;
+}
+
+
+.navigation-container a.active {
+    color: #126cc1;
+}
+
+
+.nav-divider {
+    color: #8793a3;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.page-container {
+    width: 94%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   PAGE INTRODUCTION
+========================================================= */
+
+.page-introduction {
+    padding:
+        45px
+        0
+        25px;
+}
+
+
+.section-label {
+    color: #1769aa;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.page-introduction h2 {
+    margin:
+        7px
+        0
+        10px;
+
+    color: #08396c;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+}
+
+
+.page-introduction p {
+    max-width: 780px;
+
+    color: #566274;
+
+    font-size: 17px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   NETWORK HERO
+========================================================= */
+
+.network-hero {
+    position: relative;
+
+    height: 290px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 16px
+        rgba(0, 0, 0, 0.15);
+
+    margin-bottom: 45px;
+}
+
+
+.network-hero img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.network-hero::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 23, 47, 0.92),
+            rgba(3, 36, 70, 0.62),
+            rgba(2, 23, 47, 0.12)
+        );
+}
+
+
+.network-hero-overlay {
+    position: absolute;
+
+    z-index: 2;
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 55%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 45px;
+}
+
+
+.hero-shield {
+    width: 70px;
+
+    height: 70px;
+
+    border:
+        2px solid
+        #55b3ff;
+
+    color: #55b3ff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    font-size: 27px;
+}
+
+
+.network-hero-overlay h2 {
+    color: white;
+
+    font-size: 31px;
+
+    line-height: 1.2;
+
+    margin:
+        0
+        0
+        10px;
+}
+
+
+.network-hero-overlay p {
+    color: white;
+
+    margin: 0;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+
+.section-heading h2 {
+    margin:
+        5px
+        0
+        5px;
+
+    color: #08396c;
+
+    font-size: 29px;
+}
+
+
+.section-heading p {
+    color: #657184;
+
+    margin: 0;
+
+    max-width: 750px;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services-section {
+    margin-bottom: 50px;
+}
+
+
+.service-card {
+    background: white;
+
+    border:
+        1px solid
+        #e0e7f0;
+
+    border-radius: 10px;
+
+    margin-bottom: 18px;
+
+    padding: 18px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        400px;
+
+    gap: 25px;
+
+    align-items: stretch;
+
+    box-shadow:
+        0 3px 12px
+        rgba(23, 40, 68, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.service-card:hover {
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 7px 22px
+        rgba(23, 40, 68, 0.12);
+}
+
+
+.service-content {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 25px;
+}
+
+
+.service-number {
+    color: #1b77c5;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    min-width: 42px;
+}
+
+
+.service-text h3 {
+    color: #0b3c70;
+
+    margin:
+        0
+        0
+        10px;
+
+    font-size: 21px;
+}
+
+
+.service-text p {
+    color: #4d5b6d;
+
+    margin:
+        0
+        0
+        14px;
+}
+
+
+.service-price {
+    color: #0c4f8e;
+
+    font-weight: 800;
+
+    margin-bottom: 14px;
+}
+
+
+.service-button {
+    border: none;
+
+    border-radius: 5px;
+
+    padding:
+        11px
+        18px;
+
+    background: #075eb1;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease;
+}
+
+
+.service-button:hover {
+    background: #06427d;
+}
+
+
+.service-image {
+    min-height: 250px;
+
+    border-radius: 7px;
+
+    overflow: hidden;
+}
+
+
+.service-image img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 250px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   SERVICE MESSAGE
+========================================================= */
+
+.service-message {
+    display: none;
+
+    background: #e9f7ef;
+
+    color: #176b39;
+
+    border:
+        1px solid
+        #b8e2c7;
+
+    border-radius: 7px;
+
+    padding: 15px 18px;
+
+    margin:
+        0
+        0
+        35px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SUPPORT SECTION
+========================================================= */
+
+.support-section {
+    background:
+        linear-gradient(
+            135deg,
+            #eef5fc,
+            #f8fbff
+        );
+
+    border:
+        1px solid
+        #d7e5f5;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    margin-bottom: 55px;
+}
+
+
+.support-header {
+    display: flex;
+
+    gap: 17px;
+
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+}
+
+
+.support-icon {
+    width: 52px;
+
+    height: 52px;
+
+    background: #0b5da7;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 23px;
+
+    flex-shrink: 0;
+}
+
+
+.support-header h2 {
+    margin:
+        3px
+        0
+        3px;
+
+    color: #08396c;
+
+    font-size: 25px;
+}
+
+
+.support-header p {
+    margin: 0;
+
+    color: #647285;
+}
+
+
+/* =========================================================
+   FORMS
+========================================================= */
+
+.ticket-form {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1.5fr
+        auto;
+
+    gap: 18px;
+
+    align-items: end;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-group label {
+    font-weight: 700;
+
+    color: #31445c;
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding:
+        12px
+        13px;
+
+    border:
+        1px solid
+        #cbd7e5;
+
+    border-radius: 6px;
+
+    background: white;
+
+    color: #26364c;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1b79c6;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(27, 121, 198, 0.12);
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+.ticket-button {
+    border: none;
+
+    border-radius: 6px;
+
+    background: #075eb1;
+
+    color: white;
+
+    padding:
+        12px
+        20px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.ticket-button:hover {
+    background: #06427d;
+}
+
+
+.confirmation-box {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #e9f8ed;
+
+    color: #176b39;
+
+    border:
+        1px solid
+        #b8e2c7;
+
+    border-radius: 7px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   EQUIPMENT
+========================================================= */
+
+.equipment-section {
+    margin-bottom: 55px;
+}
+
+
+.equipment-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.equipment-card {
+    background: white;
+
+    border:
+        1px solid
+        #e0e7f0;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 12px
+        rgba(23, 40, 68, 0.06);
+}
+
+
+.equipment-card img {
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+}
+
+
+.equipment-content {
+    padding: 20px;
+}
+
+
+.equipment-content h3 {
+    color: #0b3c70;
+
+    margin:
+        0
+        0
+        8px;
+}
+
+
+.equipment-content p {
+    color: #59677a;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   CUSTOMER ACTION
+========================================================= */
+
+.customer-action {
+    background: #073b6d;
+
+    color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 60px;
+}
+
+
+.customer-action .section-label {
+    color: #76c4ff;
+}
+
+
+.customer-action h2 {
+    margin:
+        5px
+        0
+        7px;
+
+    font-size: 26px;
+}
+
+
+.customer-action p {
+    margin: 0;
+
+    opacity: 0.9;
+}
+
+
+.reviews-button {
+    display: inline-block;
+
+    background: white;
+
+    color: #07528e;
+
+    padding:
+        13px
+        20px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.reviews-button:hover {
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================================
+   REVIEWS PAGE
+========================================================= */
+
+.reviews-section {
+    margin-bottom: 55px;
+}
+
+
+.reviews-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+.review-card {
+    background: white;
+
+    border:
+        1px solid
+        #e0e7f0;
+
+    border-radius: 9px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(23, 40, 68, 0.06);
+}
+
+
+.review-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.customer-avatar {
+    width: 54px;
+
+    height: 54px;
+
+    background: #075eb1;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 800;
+}
+
+
+.review-card h3 {
+    margin: 0;
+
+    color: #103f6e;
+}
+
+
+.review-card .review-top p {
+    margin: 0;
+
+    color: #758194;
+
+    font-size: 14px;
+}
+
+
+.stars {
+    color: #f2a900;
+
+    font-size: 20px;
+
+    margin:
+        17px
+        0
+        10px;
+}
+
+
+.review-text {
+    color: #4e5b6c;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.feedback-section {
+    background: white;
+
+    border:
+        1px solid
+        #e0e7f0;
+
+    border-radius: 10px;
+
+    padding: 35px;
+
+    margin-bottom: 35px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(23, 40, 68, 0.06);
+}
+
+
+.feedback-header {
+    margin-bottom: 25px;
+}
+
+
+.feedback-header h2 {
+    margin:
+        5px
+        0
+        5px;
+
+    color: #08396c;
+
+    font-size: 29px;
+}
+
+
+.feedback-header p {
+    margin: 0;
+
+    color: #687587;
+}
+
+
+.feedback-form {
+    display: grid;
+
+    gap: 18px;
+
+    max-width: 850px;
+}
+
+
+.back-to-services {
+    margin-bottom: 60px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    background: #061d37;
+
+    color: white;
+
+    padding: 35px 0;
+}
+
+
+.footer-container {
+    width: 94%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.footer-container h3 {
+    margin:
+        0
+        0
+        5px;
+}
+
+
+.footer-container p {
+    margin: 0;
+
+    opacity: 0.75;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .header-container {
+        flex-wrap: wrap;
+    }
+
+
+    .header-divider {
+        display: none;
+    }
+
+
+    .ticket-form {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .form-description {
+        grid-column:
+            span 2;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .brand {
+        min-width: 0;
+    }
+
+
+    .header-container {
+        padding: 25px;
+    }
+
+
+    .network-hero-overlay {
+        width: 75%;
+
+        padding: 30px;
+    }
+
+
+    .service-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-image {
+        min-height: 230px;
+    }
+
+
+    .equipment-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .reviews-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .customer-action {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .site-header {
+        margin: 8px;
+    }
+
+
+    .brand {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .brand h1 {
+        font-size: 25px;
+    }
+
+
+    .header-tagline {
+        font-size: 14px;
+    }
+
+
+    .navigation-container {
+        flex-wrap: wrap;
+
+        text-align: center;
+    }
+
+
+    .page-container {
+        width: 92%;
+    }
+
+
+    .page-introduction h2 {
+        font-size: 30px;
+    }
+
+
+    .network-hero {
+        height: 350px;
+    }
+
+
+    .network-hero-overlay {
+        width: 100%;
+
+        padding: 25px;
+
+        align-items: flex-end;
+    }
+
+
+    .network-hero-overlay h2 {
+        font-size: 25px;
+    }
+
+
+    .hero-shield {
+        display: none;
+    }
+
+
+    .service-content {
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+
+    .ticket-form {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .form-description {
+        grid-column:
+            auto;
+    }
+
+
+    .support-section,
+    .feedback-section {
+        padding: 22px;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+}
